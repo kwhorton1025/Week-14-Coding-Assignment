@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import "../node_modules/bootstrap/dist/css/bootstrap.css";
-import "../node_modules/jquery/dist/jquery.js";
-import App from "./App";
-import MovieList from "./movies.js";
+import "./index.css";//updated with more code
+import "../node_modules/bootstrap/dist/css/bootstrap.css";//added
+import "../node_modules/jquery/dist/jquery.js";//added
+import App from "./App";//updated with my new code
+import MovieList from "./movies.js";//added
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

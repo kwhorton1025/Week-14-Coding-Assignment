@@ -75,6 +75,7 @@ const MovieList = () => {
       review: "",
     },
   ]);
+  //different movies with title, images, genre, and places to rate with stars and type reviews
 
   const handleRatingChange = (index, newRating) => {
     const newMovies = [...movies];
@@ -104,6 +105,7 @@ const MovieList = () => {
     const movieListItem = document.querySelectorAll(".movie-list li")[index];
     movieListItem.appendChild(reviewList);
   };
+  //these three variables are needed to change the rating, change the review, and submit a review
 
   return (
     <div className="movies-container">
@@ -115,7 +117,7 @@ const MovieList = () => {
               <img
                 src={movie.poster}
                 alt={movie.title}
-                style={{ width: "400px", height: "200px" }}
+                style={{ width: "400px", height: "200px" }} //makes all movie images the same size
               />
               <div>
                 <h3>{movie.title}</h3>
@@ -132,8 +134,8 @@ const MovieList = () => {
                       name={`rating-${index}`}
                       value={rating}
                       checked={movie.rating === rating}
-                      onChange={() => handleRatingChange(index, rating)}
-                    />
+                      onChange={() => handleRatingChange(index, rating)} 
+                    /> 
                     <span
                       className="star-icon"
                       role="img"
@@ -154,7 +156,7 @@ const MovieList = () => {
                 <button onClick={() => handleReviewSubmit(index)}>
                   Submit
                 </button>
-              </div>
+              </div> 
             </div>
           </li>
         ))}
@@ -162,5 +164,6 @@ const MovieList = () => {
     </div>
   );
 };
+//this section is where you are able to rate the movie with stars and leave a text review
 
 export default MovieList;

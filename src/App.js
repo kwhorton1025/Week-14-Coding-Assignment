@@ -20,5 +20,6 @@ const HeroImage = () => {
     </div>
   );
 };
+//hero image at the top of the page with the page title
 
 export default HeroImage;
